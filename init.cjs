@@ -10,9 +10,9 @@ if (!DIRECTORY) {
 // install deps
 try {
   process.chdir(DIRECTORY);
-  execSync('npm install @antfu/eslint-config -y', { stdio: 'inherit' });
-  execSync('npm install', { stdio: 'inherit' });
-  execSync('npm install -D typescript @types/three', { stdio: 'inherit' });
+  execSync('bun add @antfu/eslint-config -y', { stdio: 'inherit' });
+  execSync('bun install', { stdio: 'inherit' });
+  execSync('bun add -D typescript @types/three', { stdio: 'inherit' });
 } catch (error) {
   console.error('Error: failed to install the dependencies.', error);
   process.exit(1);
@@ -69,4 +69,4 @@ try {
 }
 
 // run lint:fix
-execSync('npm run lint:fix', { stdio: 'inherit' });
+execSync('bun run lint:fix', { stdio: 'inherit' });
