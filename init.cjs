@@ -10,7 +10,7 @@ if (!DIRECTORY) {
 // install deps
 try {
   process.chdir(DIRECTORY);
-  execSync('bun add @antfu/eslint-config -y', { stdio: 'inherit' });
+  execSync('bunx @antfu/eslint-config -y', { stdio: 'inherit' });
   execSync('bun install', { stdio: 'inherit' });
   execSync('bun add -D typescript @types/three', { stdio: 'inherit' });
 } catch (error) {
