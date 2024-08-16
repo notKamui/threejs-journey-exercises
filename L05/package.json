@@ -1,0 +1,22 @@
+{
+  "name": "threejs-journey-exercise",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^2.26.0",
+    "three": "^0.166.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.167.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.3",
+    "vite-plugin-restart": "^0.4.1"
+  }
+}
